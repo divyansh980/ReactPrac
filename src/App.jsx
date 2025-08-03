@@ -88,13 +88,18 @@
 
 import React from 'react'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const App = () => {
         return(
                 <>
-                    <nav className='bg-emerald-950  flex py-4 px-10 items-center justify-between'>
+                   
                         <Navbar/>
-                    </nav>
+                        
+                        <Footer/>
+                       
+                        
+                   
                 </>
         )
 

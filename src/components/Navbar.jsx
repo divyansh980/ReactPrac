@@ -1,17 +1,15 @@
 import React from 'react'
+import NavPart2 from './NavPart2'
 
 
 const Navbar = ()=>{
 
         return(
               <>
+               <nav className='bg-emerald-950  flex py-4 px-10 items-center justify-between'>
                 <h2 className='text-2xl'>Divyansh</h2>
-                        <div className='flex gap-8 items-center'>
-                                <h4 className='text-xl'>About</h4>
-                                <h4 className='text-xl'>Contact</h4>
-                                <h4 className='text-xl'>Services</h4>
-                                <h4 className='text-xl'>Your Account</h4>
-                        </div>
+                        <NavPart2/>
+                </nav>
               </>  
         )
 }
