@@ -86,24 +86,139 @@
 // Componets
 
 
+// import React from 'react'
+// import Navbar from './components/Navbar'
+// import Footer from './components/Footer'
+
+// const App = () => {
+//         return(
+//                 <>                  
+//                         <Navbar/>
+                        
+//                         <Footer/>                     
+                     
+//                 </>
+//         )
+// }
+// export default App
+
+// components end here 
+
+
+// import React from 'react'
+// import Cards from './components/Cards'
+
+
+// const App = () => {
+
+// const user = " Divyansh"
+// const num = 10
+//         return(
+//                 <>                  
+//                   <Cards a = {user}/>
+//                   <Cards a ='Gupta'/>
+//                 </>
+//         )
+// }
+// export default App
+
+
+
+
+
+
+// =======================
+
+// import React from 'react'
+// import Cards from './components/Cards'
+
+
+// const App = () => {
+
+// const users =[
+//   {
+//     "name": "Alice Johnson",
+//     "city": "New York",
+//     "age": 28,
+//     "profession": "Software Engineer",
+//     "profilePhoto": "https://example.com/photos/alice.jpg"
+//   },
+//   {
+//     "name": "Brian Smith",
+//     "city": "Los Angeles",
+//     "age": 34,
+//     "profession": "Graphic Designer",
+//     "profilePhoto": "https://example.com/photos/brian.jpg"
+//   },
+//   {
+//     "name": "Catherine Lee",
+//     "city": "Chicago",
+//     "age": 25,
+//     "profession": "Marketing Specialist",
+//     "profilePhoto": "https://example.com/photos/catherine.jpg"
+//   },
+//   {
+//     "name": "David Kim",
+//     "city": "Houston",
+//     "age": 30,
+//     "profession": "Data Analyst",
+//     "profilePhoto": "https://example.com/photos/david.jpg"
+//   },
+//   {
+//     "name": "Emily Brown",
+//     "city": "Miami",
+//     "age": 27,
+//     "profession": "Product Manager",
+//     "profilePhoto": "https://example.com/photos/emily.jpg"
+//   }
+// ]
+
+// // users.forEach(function(elem){
+// //         console.log(elem)
+// // })
+
+// // users.map(function(){
+
+// //         return "hey"
+// // })
+
+
+
+
+//         return(
+//                 <>                  
+//                   <div className='p-10'>
+//                        {users.map(function(elem,idx){
+//                                 return <Cards key={idx} username={elem.name} age={elem.age} prof={elem.profession} city={elem.city} photu={elem.profile_photo}/>
+//                        })}
+//                   </div>
+//                 </>
+//         )
+// }
+// export default App
+
+
+
+
+// =======================================
+
+
+
 import React from 'react'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Ex from './components/Ex'
 
-const App = () => {
-        return(
-                <>
-                   
-                        <Navbar/>
-                        
-                        <Footer/>
-                       
-                        
-                   
-                </>
+
+const App =() => {
+        return (
+                <div>
+                        <Ex name="Divyansh Gupta"/>
+                </div>
         )
-
-
 }
 
 export default App
+
+// ============================================
+
+
+// ================================================= 

@@ -4,15 +4,12 @@
 
 body{
         background-color: black;
+        color: white;
         
 }
 
 button{
         background-color: skyblue;
         padding: 5px 10px;
-}
-
-h2 , h4{
-        color: wheat;
 }
 
