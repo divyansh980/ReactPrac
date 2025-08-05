@@ -223,40 +223,82 @@
 
 // ================================================= 
 
-import React, { useState,useEffect } from 'react'
-import axios from 'axios'
+// import React, { useState,useEffect } from 'react'
+// import axios from 'axios'
 
-const App =  () =>{
+// const App =  () =>{
 
-const [data, setData] = useState([])
+// const [data, setData] = useState([])
 
-const getData = async ()  => {
-        const response = await axios.get('https://picsum.photos/v2/list')
-        // console.log(response.data)
-        setData(response.data)
+// const getData = async ()  => {
+//         const response = await axios.get('https://picsum.photos/v2/list')
+//         // console.log(response.data)
+//         setData(response.data)
         
-}
+// }
 
-useEffect (() => {
-        getData()
-},[])
 
-        return (
+// // for fetch automatically data (API)
+// useEffect (() => {
+//         getData()
+// },[])
+
+//         return (
                
-                <div className='p-10'>
-                <button onClick={getData} className='bg-pink-700 text-white font-semibold text-2xl px-6 py-3 rounded active:scale-90'>Get Data</button>
-                <div className='p-5 mt-5 bg-gray-950'>
-                        {data.map(function(elem, idx){
-                                return <div key={idx} className='bg-gray-50 text-black flex item-center w-full justify-between px-7 py-6 rounded mb-2'>
-                                      <img className='h-40' src={elem.download_url} alt=""/>  
-                                      <h1>{elem.author}</h1>
+//                 <div className='p-10'>
+//                 <button onClick={getData} className='bg-pink-700 text-white font-semibold text-2xl px-6 py-3 rounded active:scale-90'>Get Data</button>
+//                 <div className='p-5 mt-5 bg-gray-950'>
+//                         {data.map(function(elem, idx){
+//                                 return <div key={idx} className='bg-gray-50 text-black flex item-center w-full justify-between px-7 py-6 rounded mb-2'>
+//                                       <img className='h-40' src={elem.download_url} alt=""/>  
+//                                       <h1>{elem.author}</h1>
 
-                                </div>
-                        })}
-                </div>
-                </div>
+//                                 </div>
+//                         })}
+//                 </div>
+//                 </div>
                 
 
+//         )
+// }
+// export default App
+
+
+
+// ================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =================================================//
+
+// React Routing DOM
+
+
+import React from 'react'
+import {Route,Routes} from 'react-router-dom'
+import About from './pages/About';
+
+const App = () => {
+        return (
+               
+              <div>
+              <h1>Hello Divyansh</h1>
+                <Routes>
+                    <Route path='/about' element={<About/>} />    
+                </Routes>
+              </div>
+               
         )
 }
+
 export default App
