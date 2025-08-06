@@ -282,25 +282,44 @@
 // =================================================//
 
 // React Routing DOM
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import Contact from './pages/Contact'
-import About from './pages/About'
-import Product from './pages/Product'
+// import React from 'react'
+// import { Route, Routes } from 'react-router-dom'
+// import Home from './pages/Home'
+// import Contact from './pages/Contact'
+// import About from './pages/About'
+// import Product from './pages/Product'
+// import Header from './components/Header'
 
+
+// const App = () => {
+//   return (
+//     <div>
+//     <Header/>
+//         <Routes>
+//                 <Route path='/' element={<Home/>}/>
+//                  <Route path='/contact' element={<Contact/>}/>
+//                 <Route path='/about' element={<About/>}/>
+//                  <Route path='/product' element={<Product/>}/>
+                 
+//         </Routes>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+// Context API 
+
+import React from 'react'
 
 const App = () => {
   return (
     <div>
-        {/* <h1>App</h1> */}
-        <Routes>
-                <Route path='/home' element={<Home/>}/>
-                 <Route path='/contact' element={<Contact/>}/>
-                <Route path='/about' element={<About/>}/>
-                 <Route path='/product' element={<Product/>}/>
-                 
-        </Routes>
+       
     </div>
   )
 }
