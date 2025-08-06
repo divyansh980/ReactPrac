@@ -282,23 +282,27 @@
 // =================================================//
 
 // React Routing DOM
-
-
 import React from 'react'
-import {Route,Routes} from 'react-router-dom'
-import About from './pages/About';
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import About from './pages/About'
+import Product from './pages/Product'
+
 
 const App = () => {
-        return (
-               
-              <div>
-              <h1>Hello Divyansh</h1>
-                <Routes>
-                    <Route path='/about' element={<About/>} />    
-                </Routes>
-              </div>
-               
-        )
+  return (
+    <div>
+        {/* <h1>App</h1> */}
+        <Routes>
+                <Route path='/home' element={<Home/>}/>
+                 <Route path='/contact' element={<Contact/>}/>
+                <Route path='/about' element={<About/>}/>
+                 <Route path='/product' element={<Product/>}/>
+                 
+        </Routes>
+    </div>
+  )
 }
 
 export default App
